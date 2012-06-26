@@ -28,6 +28,7 @@ namespace UnfairHighlight
       );
 
       $this->render( $this, "index" );
+      
     }
 
     private function create_attribute_if_not_exists( &$site, $attribute )

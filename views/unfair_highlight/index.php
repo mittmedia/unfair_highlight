@@ -12,6 +12,7 @@
     
       <table class="wp-list-table widefat" cellspacing="0">
         <thead>
+          
         <tr>
           <th scope="col" id="description" class="manage-column column-description" style="width: 33%">Position 1</th>
           <th scope="col" id="description" class="manage-column column-description" style="width: 33%">Position 2</th>
