@@ -9,7 +9,6 @@ namespace UnfairHighlight
       global $site;
 
       $site = \WpMvc\Site::find( 1 );
-      #$footer = \WpMvc\CustomFooter::virgin();
 
       #$this->create_attribute_if_not_exists( $site, 'footer_content' );
 
