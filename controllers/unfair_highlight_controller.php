@@ -7,8 +7,10 @@ namespace UnfairHighlight
     public function index()
     {
       global $site;
+      #$site = \WpMvc\Site::find( 1 );
 
-      $site = \WpMvc\Site::find( 1 );
+      $blogs = Blog::all();
+
 
       #$this->create_attribute_if_not_exists( $site, 'footer_content' );
 
