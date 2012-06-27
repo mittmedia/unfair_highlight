@@ -9,15 +9,10 @@ namespace UnfairHighlight
       global $site;
       global $blogs;
       global $highlight_blogs;
+      global $unfair_highlight_app;
 
       $site = \WpMvc\Site::find( 1 );
       $blogs = \WpMvc\Blog::all( false );
-
-      $highlight_blogs = array(
-          \WpMvc\Blog::find( $site->sitemeta->blog_highlight_1->meta_value, false ),
-          \WpMvc\Blog::find( $site->sitemeta->blog_highlight_2->meta_value, false ),
-          \WpMvc\Blog::find( $site->sitemeta->blog_highlight_3->meta_value, false )
-        );
       #$this->create_attribute_if_not_exists( $site, 'footer_content' );
 
       if ( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
@@ -26,7 +21,14 @@ namespace UnfairHighlight
         $site->save();
       }
 
+      $highlight_blogs = array(
+        \WpMvc\Blog::find( $site->sitemeta->blog_highlight_1->meta_value, false ),
+        \WpMvc\Blog::find( $site->sitemeta->blog_highlight_2->meta_value, false ),
+        \WpMvc\Blog::find( $site->sitemeta->blog_highlight_3->meta_value, false )
+      );
+
       $this->render( $this, "index" );
+      
     }
 
     private function create_attribute_if_not_exists( &$site, $attribute )
