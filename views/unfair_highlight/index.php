@@ -42,7 +42,7 @@
 <tr>
 <td><?php echo $blog->path ?></td><td><button onclick="window.unfair_highlight.fill_position(1, '<?php echo $blog->path ?>', <?php echo $blog->blog_id ?>)" class='button_fill_position'>Position 1</button></td>
 <td><button onclick="window.unfair_highlight.fill_position(2, '<?php echo $blog->path ?>', <?php echo $blog->blog_id ?>)" class='button_fill_position'>Position 2</button></td>
-<td><button onclick="window.unfair_highlight.fill_position(2, '<?php echo $blog->path ?>', <?php echo $blog->blog_id ?>)" class='button_fill_position'>Position 3</button></td>
+<td><button onclick="window.unfair_highlight.fill_position(3, '<?php echo $blog->path ?>', <?php echo $blog->blog_id ?>)" class='button_fill_position'>Position 3</button></td>
 </tr>
         <?php
       }
