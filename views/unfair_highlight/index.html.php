@@ -1,5 +1,5 @@
-<?php global $site; global $blogs; global $highlight_blogs; 
-      echo "<script type='text/javascript' src='" . WP_PLUGIN_URL . "/unfair_highlight/assets/build/javascripts/application.js'></script>";
+<?php global $site; global $blogs; global $highlight_blogs;
+  echo "<script type='text/javascript' src='" . WP_PLUGIN_URL . "/unfair_highlight/assets/build/javascripts/application.js'></script>";
 ?>
 <div class="wrap">
   <div id="icon-options-general" class="icon32"><br></div>
@@ -9,10 +9,10 @@
       <input type="hidden" name='site[sitemeta][blog_highlight_1][meta_value]' id='site_sitemeta_blog_highlight_1' value="<?php echo $highlight_blogs[0]->blog_id ?>" />
       <input type="hidden" name='site[sitemeta][blog_highlight_2][meta_value]' id='site_sitemeta_blog_highlight_2' value="<?php echo $highlight_blogs[1]->blog_id ?>" />
       <input type="hidden" name='site[sitemeta][blog_highlight_3][meta_value]' id='site_sitemeta_blog_highlight_3' value="<?php echo $highlight_blogs[2]->blog_id ?>" />
-    
+
       <table class="wp-list-table widefat" cellspacing="0">
         <thead>
-          
+
         <tr>
           <th scope="col" id="description" class="manage-column column-description" style="width: 33%">Position 1</th>
           <th scope="col" id="description" class="manage-column column-description" style="width: 33%">Position 2</th>
