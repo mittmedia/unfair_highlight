@@ -19,7 +19,7 @@ namespace UnfairHighlight
       $this->create_attribute_if_not_exists( $site, 'blog_highlight_2' );
       $this->create_attribute_if_not_exists( $site, 'blog_highlight_3' );
 
-      if ( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
+      if ( $_SERVER['REQUEST_METHOD'] == 'POST' && isset( $_GET['page'] ) && $_GET['page'] == 'unfair_highlight_settings' ) {
         $site->takes_post( $_POST['site'] );
 
         $site->save();
