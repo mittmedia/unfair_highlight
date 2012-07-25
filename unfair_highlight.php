@@ -44,12 +44,12 @@ $unfair_highlight_app->init( 'UnfairHighlight', WP_PLUGIN_DIR . '/unfair_highlig
 add_action( "network_admin_menu", "unfair_highlight" );
 function unfair_highlight()
 {
-  add_submenu_page( 'settings.php', 'Unfair Highlight Settings', 'Unfair Highlight', 'Super Admin', 'unfair_highlight_settings', 'unfair_highlight_settings_page');
+  add_submenu_page( 'settings.php', 'Unfair Highlight Settings', 'Unfair Highlight', 'manage_network', 'unfair_highlight_settings', 'unfair_highlight_settings_page');
 }
 
 function unfair_highlight_settings_page()
 {
   global $unfair_highlight_app;
-  
+
   $unfair_highlight_app->unfair_highlight_controller->index();
 }
